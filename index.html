@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Eric R. Burgess, MBA | Product Executive & Writer</title>
-<meta name="description" content="Eric R. Burgess — Product executive, AI ethics leader, and writer with 30 years in software. Founder of Credtent. Author of The Collaborithmic Age.">
+<meta name="description" content="Eric R. Burgess: Product executive, AI ethics leader, and writer with 30 years in software. Founder of Credtent. Author of The Collaborithmic Age.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;1,9..40,400&display=swap" rel="stylesheet">
 <style>
@@ -21,11 +21,12 @@
 }
 html{scroll-behavior:smooth}
 body{font-family:'DM Sans',sans-serif;color:var(--dark);background:var(--cream);line-height:1.7}
+svg.icon{width:16px;height:16px;stroke:currentColor;fill:none;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round;vertical-align:-3px;margin-right:6px}
 
 /* HERO */
 .hero{background:var(--navy);color:#fff;padding:80px 0 60px;text-align:center}
 .hero-inner{max-width:800px;margin:0 auto;padding:0 24px}
-.headshot{width:160px;height:160px;border-radius:50%;border:4px solid rgba(255,255,255,0.2);margin-bottom:24px;object-fit:cover}
+.headshot{width:160px;height:160px;border-radius:50%;border:4px solid rgba(255,255,255,0.2);margin-bottom:24px;object-fit:cover;object-position:50% 12%}
 .hero h1{font-family:'Libre Baskerville',serif;font-size:2.2rem;font-weight:700;letter-spacing:0.02em;margin-bottom:8px}
 .hero .tagline{font-size:1.05rem;color:rgba(255,255,255,0.7);font-weight:300;margin-bottom:20px}
 .hero .contact-line{font-size:0.88rem;color:rgba(255,255,255,0.5);margin-bottom:6px}
@@ -34,12 +35,14 @@ body{font-family:'DM Sans',sans-serif;color:var(--dark);background:var(--cream);
 
 /* NAV LINKS */
 .nav-links{display:flex;justify-content:center;gap:24px;margin-top:24px;flex-wrap:wrap}
-.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.12em;font-weight:500;padding:6px 0;border-bottom:2px solid transparent;transition:all 0.2s}
+.nav-links a{color:rgba(255,255,255,0.6);text-decoration:none;font-size:0.82rem;text-transform:uppercase;letter-spacing:0.12em;font-weight:500;padding:6px 0;border-bottom:2px solid transparent;transition:all 0.2s;display:inline-flex;align-items:center}
 .nav-links a:hover{color:#fff;border-color:var(--accent)}
+.nav-links svg.icon{stroke:currentColor}
 
 /* SECTIONS */
 section{max-width:780px;margin:0 auto;padding:60px 24px}
-section h2{font-family:'Libre Baskerville',serif;font-size:1.5rem;color:var(--navy);margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid var(--rule)}
+section h2{font-family:'Libre Baskerville',serif;font-size:1.5rem;color:var(--navy);margin-bottom:24px;padding-bottom:12px;border-bottom:2px solid var(--rule);display:flex;align-items:center}
+section h2 svg.icon{width:20px;height:20px;stroke:var(--accent);margin-right:10px}
 section h3{font-family:'DM Sans',sans-serif;font-size:1.05rem;font-weight:600;color:var(--accent);margin:28px 0 10px}
 section p{margin-bottom:16px;color:var(--mid);font-size:0.95rem}
 section p.lead{font-size:1.05rem;color:var(--dark);line-height:1.8}
@@ -56,17 +59,26 @@ section p.lead{font-size:1.05rem;color:var(--dark);line-height:1.8}
 .pub-item .title{font-family:'Libre Baskerville',serif;font-style:italic;color:var(--dark);font-size:0.95rem}
 .pub-item .detail{color:var(--mid);font-size:0.88rem}
 
+/* CRAFT GRID (range of writing work) */
+.craft-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
+.craft{background:var(--warm);padding:16px 20px;border-radius:6px;border-left:3px solid var(--accent)}
+.craft h4{font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:4px;display:flex;align-items:center}
+.craft h4 svg.icon{stroke:var(--accent)}
+.craft p{font-size:0.85rem;color:var(--mid);margin:0}
+
 /* SPEAKING TOPICS */
 .topics{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:20px 0}
 .topic{background:var(--warm);padding:16px 20px;border-radius:6px;border-left:3px solid var(--accent)}
-.topic h4{font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:4px}
+.topic h4{font-size:0.9rem;font-weight:600;color:var(--navy);margin-bottom:4px;display:flex;align-items:center}
+.topic h4 svg.icon{stroke:var(--accent)}
 .topic p{font-size:0.85rem;color:var(--mid);margin:0}
 
 /* LINKS SECTION */
 .links-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:16px;margin:20px 0}
 .link-card{background:var(--warm);padding:20px;border-radius:6px;text-align:center;transition:all 0.2s}
 .link-card:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,0.08)}
-.link-card a{text-decoration:none;color:var(--navy);font-weight:600;font-size:0.92rem;display:block}
+.link-card a{text-decoration:none;color:var(--navy);font-weight:600;font-size:0.92rem;display:flex;align-items:center;justify-content:center}
+.link-card svg.icon{stroke:var(--navy);width:18px;height:18px}
 .link-card .label{color:var(--light);font-size:0.78rem;text-transform:uppercase;letter-spacing:0.08em;margin-top:4px}
 
 /* FOOTER */
@@ -76,7 +88,7 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
 /* RESPONSIVE */
 @media(max-width:600px){
   .hero h1{font-size:1.6rem}
-  .topics{grid-template-columns:1fr}
+  .topics,.craft-grid{grid-template-columns:1fr}
   .links-grid{grid-template-columns:1fr 1fr}
   section{padding:40px 20px}
 }
@@ -86,58 +98,65 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
 
 <div class="hero">
   <div class="hero-inner">
-    <img src="headshot.png" alt="Eric R. Burgess" class="headshot">
+    <img src="headshot.webp" alt="Eric R. Burgess" class="headshot">
     <h1>Eric R. Burgess, MBA</h1>
     <p class="tagline">Product Executive &middot; AI Strategy &amp; Ethics &middot; Writer</p>
     <p class="contact-line">San Dimas, CA &middot; (626) 674-4674 &middot; <a href="mailto:erburgess@gmail.com">erburgess@gmail.com</a></p>
     <p class="contact-line">Remote &middot; Available for travel and conferences</p>
     <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#career">Career</a>
-      <a href="#writing">Writing</a>
-      <a href="#speaking">Speaking</a>
-      <a href="#links">Connect</a>
+      <a href="#about"><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>About</a>
+      <a href="#career"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Career</a>
+      <a href="#writing"><svg class="icon" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Writing</a>
+      <a href="#speaking"><svg class="icon" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 19v3"/></svg>Speaking</a>
+      <a href="#links"><svg class="icon" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></svg>Connect</a>
     </div>
   </div>
 </div>
 
 <section id="about">
-  <h2>About</h2>
+  <h2><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4.4 3.6-8 8-8s8 3.6 8 8"/></svg>About</h2>
   <p class="lead">Product executive with 30 years in software, including two decades in leadership and a decade at the C-suite level. I build platforms that connect technology to human needs and market opportunity.</p>
   <p>My career spans Disney Interactive (where I produced the Who Wants To Be A Millionaire franchise), Fortune 500 SaaS product management at Ebix, AI-powered marketing platforms at Soulmates.AI, and the founding of Credtent, a public benefit corporation building neutral licensing infrastructure for AI training data.</p>
-  <p>I write across every register: product requirements and white papers, marketing collateral and case studies, industry analysis, fiction, and personal essays. I am the author of two novels and the forthcoming <em>The Collaborithmic Age</em>, a book on AI and human creativity. My decade hosting the Boardgame Babylon podcast and consulting for publishers like Rio Grande Games, Bezier Games, and WizKids reflects a lifelong commitment to the creative industries.</p>
-  <p>What I bring to every role is the ability to see across disciplines, to translate research into product, strategy into narrative, and complexity into clarity.</p>
+  <p>I write across every register: product requirements and white papers, marketing collateral and case studies, industry analysis, fiction, and personal essays, and lately, content built to earn citation from AI answer engines, not just rank in search. I am the author of two novels and the forthcoming <em>The Collaborithmic Age</em>, a book on AI and human creativity. My decade hosting the Boardgame Babylon podcast and consulting for tabletop publishers reflects a lifelong commitment to the creative industries.</p>
+  <p>What I bring to every role is the ability to see across disciplines, to translate research into product, strategy into narrative, and complexity into clarity. I think about content value for a living, what makes a piece of writing worth trusting, worth citing, worth paying for, on both sides of that question: as the writer, and as the founder of a company built to certify it.</p>
 </section>
 
 <section id="career">
-  <h2>Career Highlights</h2>
+  <h2><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2"/></svg>Career Highlights</h2>
 
   <div class="career-item">
     <div class="role">Chief Executive Officer &amp; Co-Founder</div>
     <div class="org">Credtent (Public Benefit Corporation)</div>
     <div class="dates">2023 &ndash; Present</div>
-    <div class="desc">Founded AI licensing platform for creator rights. Raised $250K seed. Created the Creative Origin Guide and Content Sourcing Badges. Built partnerships with publishers and music licensors. Engaged Amazon, OpenAI, Perplexity, and Anthropic.</div>
+    <div class="desc">Founded AI licensing platform for creator rights. Raised $250K seed. Created the Creative Origin Guide and Content Sourcing Badges. Built partnerships with publishers and music licensors. Engaged Amazon, OpenAI, Perplexity, and Anthropic. Run a live, AI-native content pipeline end to end, brief through publish, including a working answer-engine-optimization practice for earning citation in ChatGPT, Perplexity, and AI Overviews.</div>
   </div>
 
   <div class="career-item">
     <div class="role">Chief Product Officer</div>
     <div class="org">psyML (Neuropsychology &amp; Machine Learning)</div>
-    <div class="dates">2018 &ndash; 2025</div>
+    <div class="dates">2018 &ndash; Present</div>
     <div class="desc">Led product strategy for AI/ML personality science platform. Launched APIs, secured enterprise clients including Microsoft (Logitech). Built go-to-market infrastructure.</div>
+  </div>
+
+  <div class="career-item">
+    <div class="role">Chief Product Officer</div>
+    <div class="org">NeonID</div>
+    <div class="dates">2020 &ndash; 2022</div>
+    <div class="desc">Consent-based advertising and data-independence platform. Wrote the product manifesto and go-to-market and B2B/B2C launch plans; forged a Georgetown University partnership. Built the case for giving people ownership of their own data, and wrote it in language a buyer, not just an engineer, could act on.</div>
   </div>
 
   <div class="career-item">
     <div class="role">Senior Vice President, Product &amp; Marketing</div>
     <div class="org">Soulmates.AI / Ayzenberg Group</div>
     <div class="dates">2015 &ndash; 2019</div>
-    <div class="desc">Created the Earned Media Value Index, adopted by 3,000+ companies (Coca-Cola, Target, Sprint, VISA). Developed the Brand Trust Index with eHarmony&rsquo;s founding scientist. Grew publication audience to 1M+ MAUs. Built Social ROI Reporter with predictive analytics.</div>
+    <div class="desc">As staff writer and tech expert for the company&rsquo;s publication, A-List Daily, wrote hundreds of articles on marketing, gaming, social media, influencer marketing, and content, and grew its audience to 1M+ MAUs. Created the Earned Media Value Index, adopted by 3,000+ companies (Coca-Cola, Target, Sprint, VISA). Developed the Brand Trust Index with eHarmony&rsquo;s founding scientist. Built Social ROI Reporter with predictive analytics. Wrote and contributed to agency influencer campaigns for Marriott (hospitality) and Microsoft Surface, HoloLens, and Xbox Game Pass (high-tech and video games), on a roster that skewed heavily toward game publishers.</div>
   </div>
 
   <div class="career-item">
     <div class="role">Senior Director, Marketing &amp; Product Management</div>
     <div class="org">PublishThis</div>
     <div class="dates">2013 &ndash; 2015</div>
-    <div class="desc">Increased inbound leads 37%. Company featured in Forrester Research Wave Report on Content Marketing Platforms.</div>
+    <div class="desc">Increased inbound leads 37%. Company featured in Forrester Research Wave Report on Content Marketing Platforms. Ghostwrote CEO thought leadership placed in Mashable and ClickZ. This is where my expertise in content valuation and relevance took shape: judging what content is actually worth to a business, not just how much of it there is, the discipline that content intelligence as a field is now trying to formalize.</div>
   </div>
 
   <div class="career-item">
@@ -151,89 +170,121 @@ footer a{color:rgba(255,255,255,0.6);text-decoration:none}
     <div class="role">Associate Producer</div>
     <div class="org">The Walt Disney Company (Disney Interactive)</div>
     <div class="dates">1995 &ndash; 2002</div>
-    <div class="desc">Produced Who Wants To Be A Millionaire franchise (4M+ copies sold). Wrote dialogue and requirements for 20+ products. Introduced first-ever Disney downloadable content.</div>
+    <div class="desc">Produced Who Wants To Be A Millionaire franchise (4M+ copies sold), writing all of host Regis Philbin&rsquo;s in-game dialogue and commentary across three separate editions, including the Phone-a-Friend jokes, in collaboration with Walt Disney Imagineering. Wrote dialogue, manuals, and requirements for nearly 20 titles, including Walt Disney Studios Trivia, Extreme Goofy Skateboarding, ESPN Two-Minute Drill, Disney&rsquo;s Magic Artist 3D, and Disney&rsquo;s Ultimate Ride. Introduced first-ever Disney downloadable content.</div>
   </div>
 </section>
 
 <section id="writing">
-  <h2>Writing &amp; Publications</h2>
+  <h2><svg class="icon" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Writing &amp; Publications</h2>
 
   <h3>Books</h3>
   <div class="pub-item">
     <div class="title">The Collaborithmic Age</div>
-    <div class="detail">Forthcoming &mdash; AI and human creativity</div>
+    <div class="detail">Forthcoming: AI and human creativity</div>
   </div>
   <div class="pub-item">
     <div class="title">Tired of Singing Trouble</div>
-    <div class="detail">Novel</div>
+    <div class="detail">Novel, live now on Amazon in Kindle and paperback</div>
   </div>
   <div class="pub-item">
     <div class="title">Tears Into Dew</div>
-    <div class="detail">Essay collection on grief &mdash; Published on Medium and Substack</div>
+    <div class="detail">Essay collection on grief, published on Medium and Substack</div>
   </div>
   <div class="pub-item">
     <div class="title">Optional Rules: Variants for Life I Learned from Board Games</div>
     <div class="detail">Nonfiction</div>
   </div>
 
+  <h3>Range: the kinds of writing I do</h3>
+  <div class="craft-grid">
+    <div class="craft">
+      <h4><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>Rulebooks &amp; game writing</h4>
+      <p>Tabletop rules and product naming for Academy Games, WizKids, Bezier Games, Rio Grande Games, Fowers Games, and Sunrise Tornado Games, alongside game-writing work at Disney Interactive.</p>
+    </div>
+    <div class="craft">
+      <h4><svg class="icon" viewBox="0 0 24 24"><path d="M12 2 2 7l10 5 10-5-10-5Z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>Branding &amp; naming</h4>
+      <p>Naming and brand-voice support for tabletop and consumer products, on top of building brand systems as a product and marketing executive.</p>
+    </div>
+    <div class="craft">
+      <h4><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>AI-native content &amp; AEO</h4>
+      <p>Design and run the editorial pipeline that gets content cited in ChatGPT, Perplexity, and AI Overviews, not just ranked in Google, at Credtent.</p>
+    </div>
+    <div class="craft">
+      <h4><svg class="icon" viewBox="0 0 24 24"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>Data independence &amp; AI challenges</h4>
+      <p>Wrote the product manifesto for a consent-based, data-independence platform, and I write publicly on AI ethics and creator rights through Credtent.</p>
+    </div>
+    <div class="craft">
+      <h4><svg class="icon" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg>Product purpose</h4>
+      <p>Author of the founding product manifesto and vision documents at NeonID, SORCE, and Credtent, translating strategy into the narrative a team and a market can act on.</p>
+    </div>
+    <div class="craft">
+      <h4><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Agency &amp; brand campaigns</h4>
+      <p>Wrote and contributed to influencer marketing campaigns for Marriott, Microsoft Surface, HoloLens, and Xbox Game Pass at Ayzenberg Group.</p>
+    </div>
+  </div>
+
   <h3>Industry Writing</h3>
-  <p>Publisher of <strong>Credtent on Content</strong>, covering AI ethics, content licensing, creator rights, and the economics of generative AI. Creator of the <strong>Creative Origin Guide 2026</strong> and the <strong>Credtent Creative Origin Index</strong>. Author of all white papers, case studies, and marketing collateral across four companies. Thousands of published articles spanning technology, product strategy, content marketing, and the tabletop gaming industry.</p>
+  <p>Publisher of <strong>Credtent on Content</strong>, covering AI ethics, content licensing, creator rights, and the economics of generative AI. Creator of the <strong>Creative Origin Guide 2026</strong> and the <strong>Credtent Creative Origin Index</strong>. Author of all white papers, case studies, and marketing collateral across four companies. Thousands of published articles spanning technology, product strategy, content marketing, and the tabletop gaming industry, including writing for Cardbase on trading-card grading and the collectibles market.</p>
 
   <h3>Education</h3>
-  <p><strong>MBA</strong> &mdash; Quantic School of Business and Technology<br>
-  <strong>BA, Literature (Writing)</strong> &mdash; University of California, Santa Cruz<br>
-  <strong>Graduate Screenwriting Studies</strong> &mdash; UCLA Extension</p>
+  <p><strong>MBA:</strong> Quantic School of Business and Technology<br>
+  <strong>BA, Literature (Writing):</strong> University of California, Santa Cruz<br>
+  <strong>Graduate Screenwriting Studies:</strong> UCLA Extension</p>
 </section>
 
 <section id="speaking">
-  <h2>Speaking &amp; Expertise</h2>
+  <h2><svg class="icon" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="12" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><path d="M12 19v3"/></svg>Speaking &amp; Expertise</h2>
   <p>Available for keynotes, panels, and workshops. Regular speaker at industry conferences on AI, product strategy, and content.</p>
 
   <div class="topics">
     <div class="topic">
-      <h4>AI Ethics &amp; Creator Rights</h4>
+      <h4><svg class="icon" viewBox="0 0 24 24"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78L12 21.23l8.84-8.84a5.5 5.5 0 0 0 0-7.78Z"/></svg>AI Ethics &amp; Creator Rights</h4>
       <p>Content licensing, the Creative Origin framework, and building trust between AI companies and creators.</p>
     </div>
     <div class="topic">
-      <h4>The Collaborithmic Age</h4>
+      <h4><svg class="icon" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M2 12h20"/><path d="M12 2a15 15 0 0 1 0 20 15 15 0 0 1 0-20Z"/></svg>The Collaborithmic Age</h4>
       <p>How AI and human creativity coexist, compete, and collaborate. What changes, what doesn&rsquo;t.</p>
     </div>
     <div class="topic">
-      <h4>Product Strategy &amp; SaaS</h4>
+      <h4><svg class="icon" viewBox="0 0 24 24"><path d="M13 2 3 14h9l-1 8 10-12h-9l1-8Z"/></svg>Product Strategy &amp; SaaS</h4>
       <p>Building category-defining products, translating research into commercial value, and scaling platforms.</p>
     </div>
     <div class="topic">
-      <h4>Content &amp; Thought Leadership</h4>
+      <h4><svg class="icon" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Content &amp; Thought Leadership</h4>
       <p>Content marketing strategy, earned media measurement, and building brand trust through narrative.</p>
+    </div>
+    <div class="topic">
+      <h4><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>Game Design &amp; Gamification</h4>
+      <p>Tabletop design and rules-writing craft, and what game mechanics teach product and engagement design outside of games.</p>
     </div>
   </div>
 </section>
 
 <section id="links">
-  <h2>Connect</h2>
+  <h2><svg class="icon" viewBox="0 0 24 24"><path d="M10 13a5 5 0 0 0 7 0l3-3a5 5 0 0 0-7-7l-1.5 1.5"/><path d="M14 11a5 5 0 0 0-7 0l-3 3a5 5 0 0 0 7 7l1.5-1.5"/></svg>Connect</h2>
   <div class="links-grid">
     <div class="link-card">
-      <a href="https://www.linkedin.com/in/erburgess/" target="_blank">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/erburgess/" target="_blank"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9v12"/><path d="M10 13a4 4 0 0 1 8 0v8"/></svg>LinkedIn</a>
       <div class="label">Professional Profile</div>
     </div>
     <div class="link-card">
-      <a href="https://erburgess.substack.com" target="_blank">Substack</a>
+      <a href="https://erburgess.substack.com" target="_blank"><svg class="icon" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></svg>Substack</a>
       <div class="label">Writing &amp; Essays</div>
     </div>
     <div class="link-card">
-      <a href="https://www.credtent.com" target="_blank">Credtent</a>
+      <a href="https://www.credtent.com" target="_blank"><svg class="icon" viewBox="0 0 24 24"><path d="M12 2 3 6v6c0 5 4 9 9 10 5-1 9-5 9-10V6Z"/><path d="m9 12 2 2 4-4"/></svg>Credtent</a>
       <div class="label">AI Licensing Platform</div>
     </div>
     <div class="link-card">
-      <a href="https://medium.com/@erburgess" target="_blank">Medium</a>
+      <a href="https://medium.com/@erburgess" target="_blank"><svg class="icon" viewBox="0 0 24 24"><path d="M12 20h9"/><path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>Medium</a>
       <div class="label">Articles &amp; Analysis</div>
     </div>
     <div class="link-card">
-      <a href="https://www.clippings.me/users/ericrburgess" target="_blank">Writing Portfolio</a>
+      <a href="https://www.clippings.me/users/ericrburgess" target="_blank"><svg class="icon" viewBox="0 0 24 24"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2Z"/></svg>Writing Portfolio</a>
       <div class="label">Clippings &amp; Samples</div>
     </div>
     <div class="link-card">
-      <a href="mailto:erburgess@gmail.com">Email</a>
+      <a href="mailto:erburgess@gmail.com"><svg class="icon" viewBox="0 0 24 24"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 7 10 6 10-6"/></svg>Email</a>
       <div class="label">erburgess@gmail.com</div>
     </div>
   </div>
